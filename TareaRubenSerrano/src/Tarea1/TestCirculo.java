@@ -4,19 +4,20 @@
  * and open the template in the editor.
  */
 
-package tarearubenserrano;
+package Tarea1;
 
 /**
  *
  * @author ruben
  */
-public class TareaRubenSerrano {
+public class TestCirculo {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+      
+        Circulo c=new Circulo();
+        c.setRadio(20);
+        
+        System.out.println(c.getRadio());
     }
     
 }
