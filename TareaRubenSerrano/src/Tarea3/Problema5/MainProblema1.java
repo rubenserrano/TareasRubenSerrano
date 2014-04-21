@@ -18,7 +18,7 @@ public class MainProblema1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int s;
+        int s=0;
         System.out.println(s);
     }
     

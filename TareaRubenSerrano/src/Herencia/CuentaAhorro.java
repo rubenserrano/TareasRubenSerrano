@@ -4,20 +4,14 @@
  * and open the template in the editor.
  */
 
-package Tarea3.Problema6;
-
+package Herencia;
 
 /**
  *
  * @author ruben
- */
-public class Problema1 {
-  int y;
-  public Problema1(){
-      System.out.println(y);
-      
-  }
-    
+ */ 
+public class CuentaAhorro  extends Cuenta {
+    public void CrearCuenta(){
+     System.out.println("Cuenta Creada de Ahorro con exito");
+    }
 }
-
-
