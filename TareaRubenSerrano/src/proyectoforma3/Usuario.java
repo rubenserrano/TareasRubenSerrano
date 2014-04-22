@@ -7,14 +7,27 @@
 package proyectoforma3;
 
 import java.io.Serializable;
+import java.io.File;
 
 /**
  *
  * @author campitos
  */
 public class Usuario implements Serializable{
-String nombre;
+private String nombre;
+private File archivo;
 
+    public Usuario(String nombre, File archivo) {
+        this.nombre = nombre;
+        this.archivo = archivo;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" + "nombre=" + nombre + ", archivo=" + archivo + '}';
+    }
+
+    
 
     public String getNombre() {
         return nombre;
@@ -23,17 +36,11 @@ String nombre;
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-    
-
-   
-    @Override
-    public String toString() {
-        return "Usuario{" + "nombre=" + nombre +  '}';
+    public File getArchivo() {
+        return archivo;
     }
-    public Usuario(String nombre) {
-        this.nombre = nombre;
-        
-    }
-    
+    public void setArchivo(File archivo) {
+        this.archivo = archivo;
+    }   
+         
 }

@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class GuardarUsuario {
     
     public synchronized static ArrayList<Usuario> leer()throws Exception{
-   File file=new File("archivaldo.xxxx");    
+   File file=new File("archivo.xxx");    
  
     FileInputStream fis=new FileInputStream(file);
     ObjectInputStream  ois=new ObjectInputStream(fis);
@@ -25,7 +25,7 @@ public class GuardarUsuario {
     public static void guardar(Usuario u)throws Exception{
         ArrayList usuarios=new ArrayList<Usuario>();
         
-       File file=new File("archivaldo.xxxx");    
+       File file=new File("archivo.xxx");    
          if(file.exists()){
            usuarios=  leer();
          }
